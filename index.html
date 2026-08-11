@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Online Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html">ShopEase</a>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html" class="cart-link">
+            🛒 Cart <span id="cartCount">0</span>
+        </a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Discover Your Style</h1>
+        <p>Shop the latest products at amazing prices.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<section class="categories">
+    <h2>Shop By Category</h2>
+
+    <div class="category-container">
+        <a href="products.html?category=Electronics" class="category-card">
+            <span>💻</span>
+            <h3>Electronics</h3>
+        </a>
+
+        <a href="products.html?category=Fashion" class="category-card">
+            <span>👕</span>
+            <h3>Fashion</h3>
+        </a>
+
+        <a href="products.html?category=Shoes" class="category-card">
+            <span>👟</span>
+            <h3>Shoes</h3>
+        </a>
+
+        <a href="products.html?category=Accessories" class="category-card">
+            <span>⌚</span>
+            <h3>Accessories</h3>
+        </a>
+    </div>
+</section>
+
+<section class="featured">
+    <h2>Featured Products</h2>
+    <div id="featuredProducts" class="product-grid"></div>
+
+    <a href="products.html" class="view-all">View All Products →</a>
+</section>
+
+<footer>
+    <div>
+        <h2>ShopEase</h2>
+        <p>Your one-stop online shopping destination.</p>
+    </div>
+
+    <div>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+    <div>
+        <h3>Contact</h3>
+        <p>Email: support@shopease.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

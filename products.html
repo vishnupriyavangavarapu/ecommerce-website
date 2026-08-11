@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html">ShopEase</a>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">🛒 Cart <span id="cartCount">0</span></a>
+    </nav>
+</header>
+
+<section class="products-section">
+
+    <h1>Our Products</h1>
+
+    <div class="filters">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔎 Search products..."
+        >
+
+        <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Accessories">Accessories</option>
+        </select>
+
+        <select id="sortFilter">
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="name">Name</option>
+        </select>
+
+    </div>
+
+    <div id="productGrid" class="product-grid"></div>
+
+</section>
+
+<footer>
+    <p>© 2026 ShopEase. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
