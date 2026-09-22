@@ -1,62 +1,50 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - ShopEase</title>
+    <title>MyShop - Products</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header class="navbar">
-    <div class="logo">
-        <a href="index.html">ShopEase</a>
-    </div>
+<header>
+    <nav class="navbar">
+        <h1 class="logo">MyShop</h1>
 
-    <nav>
+```
+    <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
+        <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
         <a href="login.html">Login</a>
-        <a href="cart.html">🛒 Cart <span id="cartCount">0</span></a>
-    </nav>
+    </div>
+</nav>
+```
+
 </header>
 
-<section class="products-section">
+<main class="products-page">
 
-    <h1>Our Products</h1>
+```
+<h2>Our Products</h2>
 
-    <div class="filters">
+<div class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('electronics')">Electronics</button>
+    <button onclick="filterProducts('fashion')">Fashion</button>
+    <button onclick="filterProducts('accessories')">Accessories</button>
+</div>
 
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="🔎 Search products..."
-        >
+<div id="productContainer" class="product-grid"></div>
+```
 
-        <select id="categoryFilter">
-            <option value="All">All Categories</option>
-            <option value="Electronics">Electronics</option>
-            <option value="Fashion">Fashion</option>
-            <option value="Shoes">Shoes</option>
-            <option value="Accessories">Accessories</option>
-        </select>
-
-        <select id="sortFilter">
-            <option value="default">Sort By</option>
-            <option value="low">Price: Low to High</option>
-            <option value="high">Price: High to Low</option>
-            <option value="name">Name</option>
-        </select>
-
-    </div>
-
-    <div id="productGrid" class="product-grid"></div>
-
-</section>
+</main>
 
 <footer>
-    <p>© 2026 ShopEase. All Rights Reserved.</p>
+    <p>&copy; 2026 MyShop. All Rights Reserved.</p>
 </footer>
 
 <script src="js/script.js"></script>
